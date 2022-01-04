@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Hola";
+const nuevaString = 'Hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 4;
@@ -28,7 +28,6 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
-  var str = 'Hola mundo'
   return str
 }
 
@@ -140,41 +139,42 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var cuadrado = math.pow (num , 2)
+  var cuadrado = Math.pow (num , 2)
   return cuadrado
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var cubo = math.pow (num , 3)
+  var cubo = Math.pow (num , 3)
   return cubo
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var elevacion = math.pow (num , exponent)
+  var elevacion = Math.pow (num , exponent)
   return elevacion
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var round = math.round (num)
+  var round = Math.round (num);
+  return round
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var redondeado = math.ceil(num)
+  var redondeado = Math.ceil(num);
   return redondeado
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -182,10 +182,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num > 0){
+  if (numero > 0){
     return "Es positivo"
   }
-  else if (num < 0){
+  else if (numero < 0){
     return 'Es negativo'
   }
   else 
@@ -212,14 +212,14 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var greeting = 'Hola' + nombre + '!';
+  var greeting = 'Hola' + ' ' + nombre + '!';
   return greeting
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var rectangulo = (ancho * alto)
+  var rectangulo = (ancho * alto );
   return rectangulo
 }
 
@@ -235,7 +235,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var triangulo = base * altura
+  var triangulo = (base * altura / 2);
 return triangulo
 }
 
@@ -261,9 +261,9 @@ function esVocal(letra){
     return "Es vocal"
   }
   else if (letra.length > 1){
-    return 'dato incorrecto'
+    return 'Dato incorrecto'
   }
-  else {return false}
+  else {return 'Dato incorrecto'}
 }
 
 
