@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    return 'allowed'
+    return 'Allowed'
   }
   else {
     return 'Not allowed'
@@ -75,19 +75,19 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color){
     case 'blue' :
-      console.log("This is blue");
+      return 'This is blue'
       break;
     case 'red' :
-      console.log("This is red");
+      return'This is red'
       break;
     case 'green' :
-      console.log("This is green");
+      return 'This is green'
       break;
     case 'orange':
-      console.log("This is orange");
+      return 'This is orange'
       break;
     default:
-    console.log("Color not found")
+    return 'Color not found'
   }
 }
 
@@ -139,7 +139,7 @@ function fizzBuzz(numero) {
     return 'buzz'
   }
   else if (numero % 5 === 0 && numero % 3 === 0) {
-    return 'fizzBuzz' 
+    return 'fizzbuzz' 
   }
   else {
     return numero
@@ -153,7 +153,10 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if ((num1 > num2 && num1 > num3 && num1 > 0) && !(num1 < 0 || num2 < 0 || num3 < 0)) {
+  if (num1 === 0 || num2 === 0 || num3 === 0){
+    return 'Error'
+  }
+  else if ((num1 > num2 && num1 > num3 && num1 > 0) && !(num1 < 0 || num2 < 0 || num3 < 0)) {
     return 'Número 1 es mayor y positivo'
   }
   else if (num1 < 0 || num2 < 0 || num3 < 0){
@@ -203,7 +206,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
  var mult = []
-  for (var i = 0 ; i <= 60 ; i++) {
+  for (var i = 0 ; i <= 10 ; i++) {
   
   mult.push(i * 6)
   }
@@ -213,7 +216,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero > 99) {
+  if (numero > 99 && numero < 999) {
     return true
   }
   else {
