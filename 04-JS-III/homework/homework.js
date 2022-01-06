@@ -81,7 +81,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   for (let i = 0; i < numeros.length ; i++){
-    var sum =numeros[i] + numeros[i + 1] 
+    var sum = numeros[i] + numeros[i + 1] 
   }
   return sum
 }
