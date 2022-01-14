@@ -1,0 +1,15 @@
+
+.divclass{}
+#spanid{
+    border: dashed red;
+    font-size: 18px;
+    margin: 50px;
+
+}
+#thirddiv{
+    border: 4mm ridge rgba(170, 50, 220, .6);
+    padding: 50px;
+    height: 600px;
+    width: 500px;
+ background: darkgrey;   
+}
